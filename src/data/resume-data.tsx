@@ -1,6 +1,3 @@
-// import {
-//   ConsultlyLogo,
-// } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
@@ -9,11 +6,11 @@ export const RESUME_DATA = {
   location: "Bahía Blanca, Argentina",
   locationLink: "https://www.google.com/maps/place/BahiaBlanca",
   about:
-    "TODO",
+    "Software Engineer who likes to solve complex problems that provide useful solutions",
   summary:
-    "TODO",
+    "Software Engineer with almost 3 years of experience. My topics of interest range from data engineering, automation, asynchronous programming, web scraping, to machine learning.",
   avatarUrl: "https://avatars.githubusercontent.com/u/42450976?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  personalWebsiteUrl: "#",
   contact: {
     email: "ignaciofrizzera@gmail.com",
     tel: "+542923444485",
