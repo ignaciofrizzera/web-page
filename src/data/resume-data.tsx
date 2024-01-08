@@ -61,6 +61,7 @@ export const RESUME_DATA = {
     "Python",
     "Django/Django-restframework",
     "AWS: EC2",
+    "AWS: S3",
     "AWS: Step-Functions",
     "AWS: Lambda Functions",
     "Pandas",
