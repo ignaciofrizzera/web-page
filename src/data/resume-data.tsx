@@ -44,7 +44,7 @@ export const RESUME_DATA = {
       start: "2023",
       end: "Now",
       description:
-        "TODO",
+        "Focusing on enhancing the performance and scalability of the previous developed product. Helping and guiding new interns with their tasks.",
     },
     {
       company: "Livepanel",
@@ -54,7 +54,7 @@ export const RESUME_DATA = {
       start: "2021  ",
       end: "2023",
       description:
-        "TODO",
+        "Designed and developed the backend for our core AI product. This tool does the end-to-end ML process for any project, from data selection, filtering and normalization, to model selection (third-party models), training and finally the predictions. Developed in Python using Pandas, MySQL, Django, Django-Restframework and asynchronous programming tools like Django Q. At the end of 2021, started developing in the frontend aswell in Typescript and Angular.",
     },
   ],
   skills: [
