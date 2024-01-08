@@ -8,7 +8,7 @@ export const RESUME_DATA = {
   about:
     "Software Engineer who likes to solve complex problems that provide useful solutions",
   summary:
-    "Software Engineer with almost 3 years of experience. My topics of interest range from data engineering, automation, asynchronous programming, web scraping, to machine learning.",
+    "Software Engineer with almost 3 years of experience. My topics of interest range from data engineering, automation, web scraping, to machine learning.",
   avatarUrl: "https://avatars.githubusercontent.com/u/42450976?v=4",
   personalWebsiteUrl: "#",
   contact: {
@@ -39,10 +39,20 @@ export const RESUME_DATA = {
     {
       company: "Livepanel",
       link: "https://livepanel.ai/",
-      badges: [],
-      title: "Software Developer → Software Engineer",
-      start: "2021",
-      end: "Present",
+      badges: ["full-time"],
+      title: "Software Engineer",
+      start: "2023",
+      end: "Now",
+      description:
+        "TODO",
+    },
+    {
+      company: "Livepanel",
+      link: "https://livepanel.ai/",
+      badges: ["part-time"],
+      title: "Software Developer",
+      start: "2021  ",
+      end: "2023",
       description:
         "TODO",
     },
