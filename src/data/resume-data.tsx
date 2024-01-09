@@ -83,7 +83,7 @@ export const RESUME_DATA = {
       description: "Spotify music activity data ETL",
       link: {
         label: "Spotify ETL",
-        href: "/spotify-etl",
+        href: "/projects/spotify-etl",
       },
     },
   ],
