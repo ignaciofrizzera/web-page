@@ -44,8 +44,8 @@ function splitSongsByMonth(songs: Song[]): Map<number, Song[]> {
 export default async function Component() {
   const songsByMonth = splitSongsByMonth(await getSongsData());
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4">
+      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <GoBack/>
@@ -53,7 +53,7 @@ export default async function Component() {
             <p className="text-pretty font-mono text-sm text-muted-foreground">
               {SPOTIFY_ETL_DATA.projectDescription}
             </p>
-            <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
+            <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground">
               {SPOTIFY_ETL_DATA.code.link ? (
                   <Button
                     className="size-8"
@@ -81,9 +81,7 @@ export default async function Component() {
                 {SPOTIFY_ETL_DATA.dataVisualization}
               </p>
             </Section>
-            <Section className="print-force-new-page scroll-mb-16">
-              <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-                {/* Create a bigger grid? */}
+            <Section className="scroll-mb-16">
                 {Array.from(songsByMonth).map(([month, songs]) => (
                     <Calendar
                       key={month}
@@ -91,7 +89,6 @@ export default async function Component() {
                       data={songs}
                     />
                 ))}
-              </div>
             </Section>
           </div>
         </div>

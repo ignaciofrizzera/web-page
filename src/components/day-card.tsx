@@ -13,8 +13,8 @@ export function DayCard({dayData}: DayCardProps) {
     const [topSong, setTopSong] = useState<Song>(dayData[0]);
     const [url, setUrl] = useState("");
     const baseUrl = "https://open.spotify.com/track/";
-    const height = 64;
-    const width = 64;
+    const height = 148;
+    const width = 148;
 
     function searchForTopSong() {
         const trackCounter = new Map<string, number>();

@@ -32,7 +32,7 @@ export function Calendar({month, data}: CalendarProps) {
         })
         
         // We display 3 songs per row.
-        setRows(Math.ceil(songsByDay.size/3));
+        setRows(Math.ceil(songsByDay.size/4));
         
         return songsByDay;
     }
@@ -48,11 +48,11 @@ export function Calendar({month, data}: CalendarProps) {
     }, [data]);
 
     return (
-        <main className="px-3 py-8 w-full max-w-6xl">
-            <h1 className="text font-bold text-center mb-2">
+        <main className="px-4 py-8 w-full max-w-6xl">
+            <h2 className="text-center text-xl font-bold mb-2">
                 {translateMonth(month)}
-            </h1>
-            <div className={`grid grid-cols-3 grid-rows-${rows} gap-x-3`}>
+            </h2>
+            <div className={`grid grid-cols-4 grid-rows-${rows} gap-x-4`}>
                 {Array.from(songsByDay).map(([day, songs]) => (
                     <DayCard
                         key={day}
