@@ -54,9 +54,8 @@ export function Calendar({month, data}: CalendarProps) {
             </h2>
             <div className={`grid grid-cols-4 grid-rows-${rows} gap-x-4 gap-y-4`}>
                 {Array.from(songsByDay).map(([day, songs], index) => (
-                    <div className={`col-span-1 ${index % 4 !== 3 ? 'border-r' : ''} border-b border-gray-300`}>
+                    <div key={day} className={`col-span-1 ${index % 4 !== 3 ? 'border-r' : ''} border-b border-gray-300`}>
                         <DayCard
-                            key={day}
                             dayData={songs}
                         />
                     </div>
