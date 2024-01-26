@@ -76,6 +76,7 @@ export const RESUME_DATA = {
       techStack: [
         "Side Project",
         "Python",
+        "Data",
         "AWS: S3",
         "AWS: Step-Functions",
         "AWS: Lambda-Functions",
