@@ -55,9 +55,11 @@ export function DayCard({dayData}: DayCardProps) {
     }
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mb-2">
             <div className={`h-${height} w-${width}`}>
-                <p className="text-center text-gray">{topSong.playedAt.split(' ')[0]}</p>
+                <p className="text-center text-gray">
+                    {topSong.playedAt.split(' ')[0]}
+                </p>
                 <Image
                     src={topSong.albumCover}
                     title={`${topSong.trackName} - ${topSong.trackArtist} - ${topSong.album}`}
@@ -67,8 +69,8 @@ export function DayCard({dayData}: DayCardProps) {
                     priority={true}
                     quality={100}
                 />
-                <div className={`max-w-[${width}px] break-words`}>
-                    <p className="font-bold">
+                <div className={`max-w-[${width}px]`}>
+                    <p className='text-center'>
                         <Link className="hover:underline" href={url} target="_blank" 
                             title={`${topSong.trackName} - ${topSong.trackArtist}`}>
                                 {topSong.trackName}
