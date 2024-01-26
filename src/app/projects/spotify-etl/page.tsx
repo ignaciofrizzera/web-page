@@ -16,8 +16,8 @@ async function getSongsData(): Promise<Song[]> {
   let songs: Song[] = [];
   try {
     // i don't like how this looks
-    const baseUrl = process.env.VERCEL_URL ?
-      `https://${process.env.VERCEL_URL}` : 'http://localhost:3000';
+    const baseUrl = process.env.PROD_URL  ?
+      `https://${process.env.PROD_URL }` : 'http://localhost:3000';
     const response = await fetch(`${baseUrl}/api/songs/`, { next: { revalidate: 1800 } });
     if (!response.ok) { throw new Error('Failed to fetch') }; // too pythonic?
     songs = await response.json();
