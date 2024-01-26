@@ -66,6 +66,7 @@ export const RESUME_DATA = {
     "AWS: Lambda Functions",
     "Pandas",
     "Linux",
+    "CI/CD",
     "MySQL",
     "Typescript",
     "Angular",
@@ -76,6 +77,7 @@ export const RESUME_DATA = {
       techStack: [
         "Side Project",
         "Python",
+        "Data",
         "AWS: S3",
         "AWS: Step-Functions",
         "AWS: Lambda-Functions",
@@ -83,7 +85,7 @@ export const RESUME_DATA = {
       description: "Spotify music activity data ETL",
       link: {
         label: "Spotify ETL",
-        href: "/spotify-etl",
+        href: "/projects/spotify-etl",
       },
     },
   ],
