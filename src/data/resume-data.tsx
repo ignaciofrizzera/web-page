@@ -70,6 +70,7 @@ export const RESUME_DATA = {
     "MySQL",
     "Typescript",
     "Angular",
+    "Next.js"
   ],
   projects: [
     {
@@ -85,6 +86,21 @@ export const RESUME_DATA = {
       description: "Spotify music activity data ETL",
       link: {
         label: "Spotify ETL",
+        href: "https://github.com/IgnacioFrizzera/music-activity-data-etl",
+      },
+    },
+    {
+      title: "Music Visualization",
+      techStack: [
+        "Side Project",
+        "Typescript",
+        "Data",
+        "Next.js",
+        "AWS: S3",
+      ],
+      description: "Displays data provided by an ETL in a calendar-alike form",
+      link: {
+        label: "Music Visualization",
         href: "/projects/spotify-etl",
       },
     },
