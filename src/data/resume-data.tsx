@@ -66,6 +66,7 @@ export const RESUME_DATA = {
     "AWS: Lambda Functions",
     "Pandas",
     "Linux",
+    "CI/CD",
     "MySQL",
     "Typescript",
     "Angular",
