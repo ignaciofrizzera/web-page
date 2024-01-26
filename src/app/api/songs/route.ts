@@ -6,8 +6,7 @@ export async function GET() {
     const s3Service = new S3Service();
     const yearData = await s3Service.getYearData(year);
     return Response.json(yearData);
-    // res.status(200).json(yearData); // Chain status and json for a fluent interface
   } catch (error) {
-    console.error(error); // Log the actual error for server-side debugging
+    console.error(error);
   }
 }
