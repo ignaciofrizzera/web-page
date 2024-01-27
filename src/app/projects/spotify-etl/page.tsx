@@ -69,18 +69,22 @@ export default async function Component() {
                   </Button>
               ) : null}
             </div>
-            <br/>
             <Section>
               <h2 className="text-xl font-bold">Project Overview</h2>
               <p className="text-pretty font-mono text-sm text-muted-foreground">
                 {SPOTIFY_ETL_DATA.projectOverview}
               </p>
             </Section>
-            <br/>
             <Section>
               <h2 className="text-xl font-bold">Data Visualization</h2>
               <p className="text-pretty font-mono text-sm text-muted-foreground">
                 {SPOTIFY_ETL_DATA.dataVisualization}
+              </p>
+            </Section>
+            <Section>
+              <h2 className="text-xl font-bold">Scope</h2>
+              <p className="text-pretty font-mono text-sm text-muted-foreground">
+                {SPOTIFY_ETL_DATA.scope}
               </p>
             </Section>
             <Section className="scroll-mb-16">
