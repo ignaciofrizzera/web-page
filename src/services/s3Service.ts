@@ -27,7 +27,10 @@ export class S3Service {
       }
       return songsContent;
     } catch (err: any) {
-      throw new Error(`Failed to read file from S3: ${err.message}`);
+      // log the error on the server-side
+      // most likely i didn't listen to any song on the date if the file wasn't found
+      console.log(`Failed to read file from S3: ${err.message}`);
+      return [];
     }
   }
   
