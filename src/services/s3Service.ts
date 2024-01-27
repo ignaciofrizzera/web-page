@@ -40,10 +40,10 @@ export class S3Service {
   }
 
   public async getData(): Promise<Song[]> {
-    // get the played songs for the last 20 days
+    // get the played songs for the last 12 days
     const currDate = new Date()
     const songDataPromises: Promise<Song[]>[] = [];
-    for (let i = 19; i > 0; i--) {
+    for (let i = 11; i > 0; i--) {
       const prevDate = new Date(new Date().setDate(currDate.getDate() - i));
       const currPath = this.buildPath(prevDate);
       songDataPromises.push(this.getFileContent(currPath));
