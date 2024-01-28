@@ -29,7 +29,7 @@ export class S3Service {
     } catch (err: any) {
       // log the error on the server-side
       // most likely i didn't listen to any song on the date if the file wasn't found
-      console.log(`Failed to read file from S3: ${err.message}`);
+      console.log(`Failed to read file from S3: ${err.message}, key: ${fileKey}`);
       return [];
     }
   }
@@ -44,7 +44,7 @@ export class S3Service {
 
   public async getData(): Promise<Song[]> {
     // get the played songs for the last 8 days
-    const currDate = new Date()
+    const currDate = new Date(); // ETL is in UTC-3 so at edge cases, we'll see 7 days instead of 8.
     const songDataPromises: Promise<Song[]>[] = [];
     for (let i = 7; i > 0; i--) {
       const prevDate = new Date(new Date().setDate(currDate.getDate() - i));
