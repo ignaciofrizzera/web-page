@@ -1,5 +1,9 @@
 import { S3Service } from "@/services/s3Service";
 
+export const fetchCache = 'force-no-store'
+export const revalidate = 0
+export const dynamic = 'force-dynamic'
+
 export async function GET() {
   try {
     const s3Service = new S3Service();
