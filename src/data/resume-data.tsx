@@ -8,7 +8,7 @@ export const RESUME_DATA = {
   about:
     "Software Engineer who likes to solve complex problems that provide useful solutions",
   summary:
-    "Software Engineer with almost 3 years of experience. My topics of interest range from data engineering, automation, web scraping, to machine learning.",
+    "Solving challenging and complex problems is what I enjoy the most about Software Engineering. With almost 3 years of experience at Livepanel, I've worked building and designing end-to-end applications. My topics of interest range from data engineering, automation, web scraping, to machine learning.",
   avatarUrl: "https://avatars.githubusercontent.com/u/42450976?v=4",
   personalWebsiteUrl: "#",
   contact: {
@@ -44,7 +44,7 @@ export const RESUME_DATA = {
       start: "2023",
       end: "Now",
       description:
-        "Focusing on enhancing the performance and scalability of the previous developed product. Helping and guiding new interns with their tasks.",
+        "Currently working on the migration of Livepanel's core AI product into a SaaS platform, with active involvement in both backend and frontend. Achieved complete automation of the backend processes, reducing manual intervention to almost zero. Significantly scaled our system to handle large datasets. Migrated our asynchronous tasks from Django Q to Celery. Actively helping new interns with their tasks."
     },
     {
       company: "Livepanel",
@@ -54,7 +54,7 @@ export const RESUME_DATA = {
       start: "2021  ",
       end: "2023",
       description:
-        "Designed and developed the backend for our core AI product. This tool does the end-to-end ML process for any project, from data selection, filtering and normalization, to model selection (third-party models), training and finally the predictions. Developed in Python using Pandas, MySQL, Django, Django-Restframework and asynchronous programming tools like Django Q. At the end of 2021, started developing in the frontend aswell in Typescript and Angular.",
+        "Led the backend development for what would be Livepanel's core AI product, which manages the end-to-end process for any Machine Learning project. From data selection, filtering and normalization, to model selection, training and finally their use on predictions. At the end of 2021, I started developing in the frontend as well, taking full responsibility for the project. Technologies used for backend: Python, Pandas, MySQL, Django, Django-Restframework, and asynchronous programming tools like Django Q. For the frontend I used Typescript and Angular.",
     },
   ],
   skills: [
@@ -64,10 +64,10 @@ export const RESUME_DATA = {
     "AWS: S3",
     "AWS: Step-Functions",
     "AWS: Lambda Functions",
-    "Pandas",
     "Linux",
     "CI/CD",
     "MySQL",
+    "Pandas",
     "Typescript",
     "Angular",
     "Next.js"
