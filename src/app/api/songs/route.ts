@@ -2,7 +2,7 @@ import { S3Service } from "@/services/s3Service";
 
 // This actually disables caching.
 export const fetchCache = 'force-no-store'
-export const revalidate = 600 // revalidate every 10 minutes.
+export const revalidate = 0 // 600 seconds were caching it forever.
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
