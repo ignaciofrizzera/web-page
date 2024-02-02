@@ -48,7 +48,7 @@ export function Calendar({month, data}: CalendarProps) {
     }, [data]);
 
     return (
-        <main className="px-4 py-8 w-full max-w-6xl">
+        <main className="px-4 w-full max-w-6xl">
             <h2 className="text-center text-xl font-bold mb-2">
                 {translateMonth(month)}
             </h2>
