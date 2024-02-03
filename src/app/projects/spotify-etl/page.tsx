@@ -18,7 +18,7 @@ async function getSongsData(): Promise<Song[]> {
     // i don't like how this looks
     const baseUrl = process.env.PROD_URL  ?
       `${process.env.PROD_URL }` : 'http://localhost:3000';
-    const response = await fetch(`${baseUrl}/api/songs/`, { cache: 'no-store' });
+    const response = await fetch(`${baseUrl}/api/songs/`); // { cache: 'no-store' });
     if (!response.ok) { throw new Error('Failed to fetch') }; // too pythonic?
     songs = await response.json();
     console.log(songs.length);

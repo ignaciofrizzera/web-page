@@ -13,4 +13,4 @@ export async function GET(request: Request) {
   }
 }
 
-export const revalidate = 0
+export const revalidate = 600;
