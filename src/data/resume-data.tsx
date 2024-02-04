@@ -44,7 +44,7 @@ export const RESUME_DATA = {
       start: "2023",
       end: "Now",
       description:
-        "Currently working on the migration of Livepanel's core AI product into a SaaS platform, with active involvement in both backend and frontend. Achieved complete automation of the backend processes, reducing manual intervention to almost zero. Significantly scaled our system to handle large datasets. Migrated our asynchronous tasks from Django Q to Celery. Actively helping new interns with their tasks."
+        "Currently leading the migration of Livepanel's core AI product into a SaaS platform, with active involvement in both backend and frontend. Achieved complete automation of the backend processes, reducing manual intervention to almost zero. Significantly scaled our system to handle large datasets. Migrated our asynchronous tasks from Django Q to Celery. Actively helping new interns with their tasks."
     },
     {
       company: "Livepanel",
@@ -54,7 +54,7 @@ export const RESUME_DATA = {
       start: "2021  ",
       end: "2023",
       description:
-        "Led the backend development for what would be Livepanel's core AI product, which manages the end-to-end process for any Machine Learning project. From data selection, filtering and normalization, to model selection, training and finally their use on predictions. At the end of 2021, I started developing in the frontend as well, taking full responsibility for the project. Technologies used for backend: Python, Pandas, MySQL, Django, Django-Restframework, and asynchronous programming tools like Django Q. For the frontend I used Typescript and Angular.",
+        "Led the backend development for what would be Livepanel's core AI product, which manages the end-to-end process for any Machine Learning project. From data selection, filtering and normalization, to model selection, training and finally their use on predictions. At the end of 2021, I started developing in the frontend as well. Technologies used for backend: Python, Pandas, MySQL, Django, Django-Restframework, and asynchronous programming tools like Django Q. For the frontend I used Typescript and Angular.",
     },
   ],
   skills: [
