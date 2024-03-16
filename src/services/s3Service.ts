@@ -44,7 +44,7 @@ export class S3Service {
 
   public async getData(): Promise<Song[]> {
     // get the played songs for the last 8 days
-    const currDate = new Date(); // ETL is in UTC-3 so at edge cases, we'll see 7 days instead of 8.
+    const currDate = new Date();
     const songDataPromises: Promise<Song[]>[] = [];
     for (let i = 7; i > 0; i--) {
       const prevDate = new Date(new Date().setDate(currDate.getDate() - i));

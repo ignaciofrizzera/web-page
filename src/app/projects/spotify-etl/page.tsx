@@ -31,7 +31,7 @@ async function getSongsData(): Promise<Song[]> {
 function splitSongsByMonth(songs: Song[]): Map<number, Song[]> {
   const splitSongs = new Map<number, Song[]>(); // <Month Number, List of Songs played that month>
   songs.forEach(song => {
-    const currMonth = new Date(song.playedAt).getMonth(); // 0 -> january, ...
+    const currMonth = new Date(song.playedAt[0]).getMonth(); // 0 -> january, ...
     if (!splitSongs.has(currMonth)) {
       splitSongs.set(currMonth, []);
     }
