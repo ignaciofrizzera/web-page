@@ -21,7 +21,7 @@ export function Calendar({month, data}: CalendarProps) {
     function splitSongsByDay() {
         const songsByDay = new Map<number, Song[]>(); // <Day Number, List of Songs played that day>
         data.forEach(song => {
-            const currDay = new Date(song.playedAt).getDate();
+            const currDay = new Date(song.playedAt[0]).getDate();
             if (!songsByDay.has(currDay)) {
                 songsByDay.set(currDay, []);
             }

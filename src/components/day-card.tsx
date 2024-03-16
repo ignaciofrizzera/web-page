@@ -58,7 +58,7 @@ export function DayCard({dayData}: DayCardProps) {
         <div className="flex flex-col items-center mb-2">
             <div className={`h-${height} w-${width}`}>
                 <p className="text-center text-gray">
-                    {topSong.playedAt.split(' ')[0]}
+                    {topSong.playedAt[0].split(' ')[0]}
                 </p>
                 <Image
                     src={topSong.albumCover}
