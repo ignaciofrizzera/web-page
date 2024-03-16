@@ -17,28 +17,16 @@ export function DayCard({dayData}: DayCardProps) {
     const width = 148;
 
     function searchForTopSong() {
-        const trackCounter = new Map<string, number>();
         let maxCount = 0;
         let topSong = dayData[0];
-        
         dayData.forEach(song => {
-            if (!trackCounter.has(song.trackId)){
-                trackCounter.set(song.trackId, 1);
-            } else {
-                const currValue = trackCounter.get(song.trackId);
-                if (currValue) {
-                    trackCounter.set(song.trackId, currValue + 1);
-                }   
-            }
-            let finalValue = trackCounter.get(song.trackId);
-            if (finalValue && finalValue > maxCount) {
+            let currPlayedAtLen = song.playedAt.length;
+            if (currPlayedAtLen > maxCount) {
                 topSong = song;
-                maxCount = finalValue;
+                maxCount = currPlayedAtLen;
             }
         })
-
         setUrl(`${baseUrl}${topSong.trackId}`);
-        
         return topSong;
     }
 
