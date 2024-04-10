@@ -2,7 +2,7 @@ export interface ISong {
     track_id: string;
     track_name: string;
     track_artist: string;
-    played_at: string;
+    played_at: string[];
     explicit: boolean;
     popularity: number;
     album: string;
@@ -37,7 +37,7 @@ export class Song {
     public trackId: string;
     public trackName: string;
     public trackArtist: string;
-    public playedAt: string;
+    public playedAt: string[];
     public explicit: boolean;
     public popularity: number;
     public album: string;

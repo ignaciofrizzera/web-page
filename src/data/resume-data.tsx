@@ -8,7 +8,7 @@ export const RESUME_DATA = {
   about:
     "Software Engineer who likes to solve complex problems that provide useful solutions",
   summary:
-    "Solving challenging and complex problems is what I enjoy the most about Software Engineering. With almost 3 years of experience at Livepanel, I've worked building and designing end-to-end applications. My topics of interest range from data engineering, automation, web scraping, to machine learning.",
+    "Solving challenging and complex problems is what I enjoy the most about Software Engineering. With over 3 years of experience at Livepanel, I've worked building and designing end-to-end applications. My topics of interest range from data engineering, automation, web scraping, to machine learning.",
   avatarUrl: "https://avatars.githubusercontent.com/u/42450976?v=4",
   personalWebsiteUrl: "#",
   contact: {
@@ -44,7 +44,7 @@ export const RESUME_DATA = {
       start: "2023",
       end: "Now",
       description:
-        "Currently leading the migration of Livepanel's core AI product into a SaaS platform, with active involvement in both backend and frontend. Achieved complete automation of the backend processes, reducing manual intervention to almost zero. Significantly scaled our system to handle large datasets. Migrated our asynchronous tasks from Django Q to Celery. Actively helping new interns with their tasks."
+        "Currently leading the migration and development of the company’s main product from an internal tool into a SaaS platform. Managing a small team of three developers, providing guidance and delegating various tasks. Achieved complete automation of the backend processes, reducing manual intervention to almost zero. Significantly scaled our system to handle large datasets. Migrated our asynchronous tasks from Django Q to Celery. Actively helping new interns with their tasks."
     },
     {
       company: "Livepanel",
